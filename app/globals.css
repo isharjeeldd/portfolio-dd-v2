@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /*
  * Brand tokens — ADR-0007. Dark-only (FR-THEME-1).
@@ -70,6 +71,46 @@ body {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/*
+ * Reading experience (FR-BLOG-2). Body copy stays ink — accent is gated to
+ * links/anchors per FR-THEME-5 (crimson never colors long-form text).
+ */
+.post-prose {
+  @apply prose prose-invert max-w-none
+    prose-headings:font-display prose-headings:tracking-tight prose-headings:text-ink
+    prose-p:text-ink/85 prose-li:text-ink/85 prose-strong:text-ink
+    prose-a:text-accent prose-a:underline-offset-4
+    prose-blockquote:border-l-accent prose-blockquote:text-muted
+    prose-code:font-mono prose-code:text-[0.9em]
+    prose-hr:border-line;
+}
+
+.post-prose :where(h2, h3, h4) a {
+  color: inherit;
+  text-decoration: none;
+}
+.post-prose :where(h2, h3, h4) a:hover::after {
+  content: " #";
+  color: var(--accent);
+}
+
+.post-prose pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  overflow-x: auto;
+}
+
+.post-prose :not(pre) > code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 0.1em 0.35em;
+}
+.post-prose :not(pre) > code::before,
+.post-prose :not(pre) > code::after {
+  content: none;
 }
 
 /* Global reduced-motion gate (NFR-A11Y-4). GSAP work adds its own

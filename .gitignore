@@ -9,6 +9,7 @@ node_modules/
 !.yarn/versions
 
 # builds
+.content-collections/
 .next/
 out/
 dist/

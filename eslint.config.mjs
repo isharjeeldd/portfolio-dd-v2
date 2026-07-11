@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generated content layer (ADR-0003) — not our code style to police.
+    ".content-collections/**",
   ]),
 ]);
 
