@@ -1,7 +1,7 @@
 ---
 feature: Launch Content — Meta Case Study Build Log
 type: feature
-status: ready
+status: done
 release: "1.0.0"
 priority: P1
 component: content
