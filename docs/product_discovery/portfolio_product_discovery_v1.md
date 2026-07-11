@@ -19,15 +19,16 @@
 ## Changelog
 
 ### 1.0.0 — July 2026
+- Changed: primary display name is **Muhammad Sharjeel** (per CNIC); brand mark becomes **MS®**. "Sharjeel Afzaal" is retained as alternate name for SEO and domain continuity (`sharjeelafzaal.com`).
 - Added: initial product discovery for the new portfolio, derived from design-inspiration research (awwwards) and the grill sessions of 2026-07-11.
 
 ## Vision & Positioning
 
-The portfolio presents **Sharjeel Afzaal — senior software engineer** — to three audiences: recruiters/hiring managers, engineering peers (via the blog), and prospective freelance clients. Positioning is a deliberate hybrid:
+The portfolio presents **Muhammad Sharjeel — senior software engineer** (professionally also known as Sharjeel Afzaal; both names must resolve to him in search) — to three audiences: recruiters/hiring managers, engineering peers (via the blog), and prospective freelance clients. Positioning is a deliberate hybrid:
 
 - **Primary:** senior engineer, open to opportunities — craft-first showcase, "get in touch" conversion.
 - **Secondary:** selectively available for freelance/contract work — an understated availability signal; no rates published; the contact form qualifies intent.
-- **Long-game:** the brand is built to grow into an independent studio/business later — hence a mark-led identity (SA®) rather than a purely personal one.
+- **Long-game:** the brand is built to grow into an independent studio/business later — hence a mark-led identity (MS®) rather than a purely personal one.
 
 The site itself must function as a **work sample**: its performance, accessibility, and interaction craft are part of the message.
 
@@ -54,7 +55,7 @@ What visitors should feel: *this person engineers experiences with restraint and
 |---|---|
 | **D1** | **Hybrid structure.** One-page scroll-narrative landing (Hero → Selected Work → Playground → About/Experience → Blog teaser → Contact) plus dedicated routes `/blog` and `/blog/<post>`. Per-project case-study pages are deferred (see Out of Scope). |
 | **D2** | **Design direction** is dark editorial minimalism with engineered motion, per the four locked inspiration references above. |
-| **D3** | **Brand mark is monogram-led: SA®.** The mark leads nav/favicon/social cards; the full name appears secondary (hero, metadata, SEO). Chosen to scale into a future studio brand. |
+| **D3** | **Brand mark is monogram-led: MS®** (from *Muhammad Sharjeel*, the primary display name per CNIC). The mark leads nav/favicon/social cards; the full name appears secondary (hero, metadata, SEO). "Sharjeel Afzaal" is the alternate name — kept in metadata/structured data so existing searches and `sharjeelafzaal.com` continuity hold. Chosen to scale into a future studio brand. |
 | **D4** | **Dark-only theme; monochrome base + one electric accent.** Near-black canvas, off-white type, accent used sparingly (< ~5% of any viewport). |
 | **D5** | **Visitor-selectable accent.** The accent color is themeable by the visitor from a curated set (~4 options: terminal lime *(default)*, electric blue, signal amber, crimson); choice persists across visits. This doubles as a signature micro-delight. |
 | **D6** | **Typography: geometric grotesque display** for hero/section headings; clean sans for body; monospace accents for code/labels/terminal flavor. |
@@ -72,7 +73,7 @@ Language: **must** = non-negotiable for 1.0.0 · **should** = strongly recommend
 
 ### F-A. Hero / Landing
 
-The first viewport: SA® mark, name + role, the kinetic-typography signature moment, availability signal, primary CTA, scroll affordance.
+The first viewport: MS® mark, name (*Muhammad Sharjeel*) + role, the kinetic-typography signature moment, availability signal, primary CTA, scroll affordance.
 
 - Must: kinetic type reveal on load and/or scroll; identity + role readable within 3 seconds regardless of animation state.
 - Must: reduced-motion visitors get a composed static (or minimally animated) hero.
@@ -180,7 +181,7 @@ Landing-page section + persistent nav affordance: form (name/email/message + opt
 - **Accent theming (D5) — must:** curated accent set, default terminal lime; switch applies live without reload; persists across visits; all interactive states re-theme coherently.
 - **Performance — must:** the site *is* a work sample. Fast first load, no jank in scroll-driven motion, animations don't tax low-end devices. Concrete budgets set in the FSD.
 - **Accessibility — must:** semantic structure, full keyboard navigation, visible focus, contrast within the dark palette, `prefers-reduced-motion` respected everywhere.
-- **SEO / social — must:** correct metadata + Open Graph/Twitter cards on every page (SA®-branded, accent-aware), sitemap, RSS; name-search finds the site.
+- **SEO / social — must:** correct metadata + Open Graph/Twitter cards on every page (MS®-branded, accent-aware), sitemap, RSS. Name-search must find the site for **both** "Muhammad Sharjeel" and "Sharjeel Afzaal" (structured-data `alternateName`, metadata keywords).
 - **Resilience — should:** no third-party outage (AI, form delivery, analytics) may break core browsing.
 
 ## Out of Scope for v1
