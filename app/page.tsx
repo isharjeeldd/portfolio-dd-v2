@@ -1,3 +1,4 @@
+import { BlogTeaser } from "@/components/blog/blog-teaser";
 import { Hero } from "@/components/hero/hero";
 import { site } from "@/lib/site";
 
@@ -26,6 +27,8 @@ export default function Home() {
         <h2 className="font-display text-3xl font-bold tracking-tight">About</h2>
         <p className="mt-4 font-mono text-sm text-faint">{"// F008 — in the loop"}</p>
       </section>
+
+      <BlogTeaser />
 
       <section id="contact" className="scroll-mt-20 border-t border-line py-24">
         <h2 className="font-display text-3xl font-bold tracking-tight">Contact</h2>
