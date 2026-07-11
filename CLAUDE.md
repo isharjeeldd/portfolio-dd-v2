@@ -7,3 +7,4 @@
 - Release scoping is gated: Product Discovery (`docs/product_discovery/portfolio_product_discovery_v<N>.md`) locks scope, then the FSD (`docs/fsd/portfolio_fsd_v<N>.md`) turns it into `FR-<area>-<n>` requirements. **Do not create implementation features for a release until its FSD is locked.** Keep product discovery & FSD technology-agnostic (stack lives in tech discovery / ADRs).
 - Git flow is forward-only `develop → main`. Don't merge `main` down into `develop` except documented hotfix back-merges. Production tags live on `main` only.
 - Before coding against any external library/framework API, verify current syntax via WebSearch/WebFetch — assume prior knowledge is stale.
+- **Next.js 16 is NOT the Next.js you know** — breaking changes vs training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing Next-specific code.
