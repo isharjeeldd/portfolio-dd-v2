@@ -1,9 +1,20 @@
+import { readFileSync } from "node:fs";
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from "@content-collections/mdx";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import { z } from "zod";
+import { getCachedTldr, type TldrCache } from "./lib/tldr";
+
+// Committed pre-build cache (FR-BLOG-6) — see scripts/generate-tldr.mjs.
+function readTldrCache(): TldrCache {
+  try {
+    return JSON.parse(readFileSync("content/tldr-cache.json", "utf8")) as TldrCache;
+  } catch {
+    return {};
+  }
+}
 
 /**
  * The content contract (FR-BLOG-3, ADR-0003): typed frontmatter — malformed
@@ -34,12 +45,14 @@ const posts = defineCollection({
     });
 
     const words = document.content.split(/\s+/).filter(Boolean).length;
+    const slug = document._meta.path;
 
     return {
       ...document,
       date: document.date.toISOString(),
-      slug: document._meta.path,
+      slug,
       readingTime: Math.max(1, Math.round(words / WORDS_PER_MINUTE)),
+      tldr: getCachedTldr(slug, document.content, readTldrCache()),
       mdx,
     };
   },

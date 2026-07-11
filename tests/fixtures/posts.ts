@@ -9,6 +9,7 @@ export function makePost(overrides: Partial<Post> & { slug: string }): Post {
     tags: [],
     draft: false,
     readingTime: 3,
+    tldr: null,
     mdx: "",
     cover: undefined,
     content: "",

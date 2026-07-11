@@ -1,0 +1,11 @@
+{
+  "why-this-portfolio-has-a-docs-folder": {
+    "hash": "c0312bdbb98f77c0bbe35894a4a779b764ae6252b7e0c5e8cd3bcd283ea55747",
+    "takeaways": [
+      "Building a portfolio with full product-discovery docs, a functional spec, and ADRs makes the process itself a work sample of senior engineering.",
+      "A forward-only pipeline (discovery → spec → ADRs → TDD → code → release) ensures every implementation traces back to a locked decision.",
+      "Writing requirements and tests before code eliminates implementation thrash and makes edge cases explicit rather than accidental.",
+      "Documented decisions compound over time: future versions start from a versioned baseline instead of reverse-engineering intent from code."
+    ]
+  }
+}

@@ -46,10 +46,10 @@ Build: Content Collections watches `content/`, validates schema, compiles MDX wi
 
 ## Current Limitations
 
-- TL;DR blocks (FR-BLOG-6) not yet attached — F010 adds a build-time cache keyed by content hash.
-- `SITE_URL` in `lib/feed.ts` is the Vercel alias; updated at domain cutover (post-launch).
+- `site.url` is the Vercel alias; updated at domain cutover (post-launch).
 - Table of contents for long posts (FR-BLOG-8, May) not implemented.
 
 ## Changelog
 
+- 2026-07-11 — `post` gains computed `tldr: string[] | null` from the committed `content/tldr-cache.json` (content-hash keyed; `npm run tldr` regenerates via any configured AI provider) (F010).
 - 2026-07-11 — Initial content model: `post` type via Content Collections (F004).
