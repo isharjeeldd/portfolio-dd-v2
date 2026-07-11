@@ -14,7 +14,7 @@ A release's discovery doc lists the features in scope and **locks** them; once l
 
 | File | Purpose |
 |---|---|
-| *(none yet)* | `portfolio_product_discovery_v1.md` will scope the first release (1.0.0) of the new portfolio, informed by the design-inspiration research. |
+| [`portfolio_product_discovery_v1.md`](./portfolio_product_discovery_v1.md) | **v1 — 1.0.0 scope. ✅ LOCKED 2026-07-11.** Design direction, 13 Decisions, feature scope with edge cases, out-of-scope table. |
 
 ## Rules
 

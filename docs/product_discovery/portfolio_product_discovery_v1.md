@@ -1,10 +1,10 @@
 # Portfolio Product Discovery — v1
 
-> 🚧 **DRAFT — scope not yet locked**
-> Next stage on lock: `docs/fsd/portfolio_fsd_v1.md`
-> Target release: **1.0.0**
+> ✅ **SCOPE LOCKED (v1.0.0)** — locked by @isharjeeldd on 2026-07-11
+> Next stage: `docs/fsd/portfolio_fsd_v1.md`
+> This document is frozen. Scope changes go into `portfolio_product_discovery_v2.md`.
 
-**Owner:** @isharjeeldd · **Created:** 2026-07-11 · **Updated:** 2026-07-11
+**Owner:** @isharjeeldd · **Created:** 2026-07-11 · **Updated:** 2026-07-11 · **Locked:** 2026-07-11
 
 ## Table of Contents
 
