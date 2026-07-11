@@ -5,7 +5,7 @@
 | **Product** | Personal developer portfolio of Muhammad Sharjeel |
 | **Release** | 1.0.0 |
 | **Document version** | 1.0 |
-| **Status** | 🚧 DRAFT — awaiting lock (lock = BUILD GATE) |
+| **Status** | ✅ LOCKED — 2026-07-11 by @isharjeeldd (build gate open) |
 | **Date** | 2026-07-11 |
 | **Repository** | https://github.com/isharjeeldd/portfolio-dd-v2 |
 
@@ -14,6 +14,7 @@
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-07-11 | Initial FSD derived from locked `portfolio_product_discovery_v1.md` |
+| 1.0 | 2026-07-11 | **Locked** by @isharjeeldd — build gate open; FR IDs frozen |
 
 **Requirement language.** `Must` = required for 1.0.0; cutting one needs sign-off recorded here. `Should` = strongly recommended, cut only with reason. `May` = optional. Deferred items are marked `Won't (v1)` in §8.
 

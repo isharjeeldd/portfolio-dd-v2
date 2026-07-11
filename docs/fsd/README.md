@@ -16,7 +16,7 @@ A release's **Product Discovery** doc (`../product_discovery/portfolio_product_d
 
 | File | Purpose |
 |---|---|
-| [`portfolio_fsd_v1.md`](./portfolio_fsd_v1.md) | **v1 — functional contract for 1.0.0.** 🚧 Draft, awaiting lock. Derived from `portfolio_product_discovery_v1.md` (locked 2026-07-11). |
+| [`portfolio_fsd_v1.md`](./portfolio_fsd_v1.md) | **v1 — functional contract for 1.0.0. ✅ LOCKED 2026-07-11.** 47 FRs / 10 areas, NFR budgets, traceability to discovery v1. |
 
 ## Rules
 
