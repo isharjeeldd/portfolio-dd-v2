@@ -1,7 +1,7 @@
 ---
 feature: Scaffold & Design System Foundation
 type: feature
-status: ready
+status: done
 release: "1.0.0"
 priority: P0
 component: design-system
