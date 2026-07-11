@@ -1,4 +1,5 @@
 import { BlogTeaser } from "@/components/blog/blog-teaser";
+import { ContactForm } from "@/components/contact/contact-form";
 import { Hero } from "@/components/hero/hero";
 import { site } from "@/lib/site";
 
@@ -31,13 +32,22 @@ export default function Home() {
       <BlogTeaser />
 
       <section id="contact" className="scroll-mt-20 border-t border-line py-24">
-        <h2 className="font-display text-3xl font-bold tracking-tight">Contact</h2>
+        <p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted">
+          {site.availability} <span className="text-accent">●</span>
+        </p>
+        <h2 className="font-display text-3xl font-bold tracking-tight">
+          Contact<span className="text-accent">.</span>
+        </h2>
         <p className="mt-4 max-w-xl text-muted">
-          Until the form ships (F006):{" "}
+          A role, a contract, or a question about something I wrote — all
+          welcome. Direct email works too:{" "}
           <a href={`mailto:${site.email}`} className="text-accent underline-offset-4 hover:underline">
             {site.email}
           </a>
         </p>
+        <div className="mt-10">
+          <ContactForm />
+        </div>
       </section>
     </div>
   );
