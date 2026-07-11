@@ -2,7 +2,7 @@ import { Feed } from "feed";
 import { site } from "@/lib/site";
 import type { Post } from "@/lib/posts";
 
-export const SITE_URL = "https://portfolio-dd-v2-sharjeels-projects-22ea7cbd.vercel.app";
+export const SITE_URL = site.url;
 
 /**
  * RSS feed builder (FR-BLOG-4). Pure — the /feed.xml route feeds it the

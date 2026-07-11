@@ -5,6 +5,8 @@
  * SEO/domain continuity (structured data `alternateName`, metadata keywords).
  */
 export const site = {
+  /** Canonical origin — swapped to the custom domain at cutover (post-launch). */
+  url: "https://portfolio-dd-v2-sharjeels-projects-22ea7cbd.vercel.app",
   name: "Muhammad Sharjeel",
   alternateName: "Sharjeel Afzaal",
   role: "Senior Software Engineer",

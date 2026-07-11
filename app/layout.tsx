@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { AccentScript } from "@/components/theme/accent-script";
 import { DEFAULT_ACCENT } from "@/lib/accent";
+import { personJsonLd } from "@/lib/seo";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -23,11 +24,22 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} — ${site.role}`,
     template: `%s · ${site.mark}®`,
   },
   description: `${site.name} (${site.alternateName}) — ${site.role.toLowerCase()} building platforms, products, and the occasional portfolio.`,
+  // Both names indexable (FR-SEO-3 / NFR-SEO-1).
+  keywords: [site.name, site.alternateName, site.role, "portfolio", "software engineer"],
+  alternates: { canonical: "/", types: { "application/rss+xml": "/feed.xml" } },
+  openGraph: {
+    type: "website",
+    url: site.url,
+    siteName: `${site.name} — ${site.role}`,
+    locale: "en_US",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({
@@ -43,6 +55,10 @@ export default function RootLayout({
     >
       <head>
         <AccentScript />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd()) }}
+        />
       </head>
       <body className="flex min-h-full flex-col">
         <a
