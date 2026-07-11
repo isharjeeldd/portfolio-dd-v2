@@ -129,9 +129,15 @@ draft → ready → in-progress → review → done
 - **Performance:** the portfolio is itself a work sample — Lighthouse / Core Web Vitals targets are set in the FSD's NFR section and validated before release.
 - **SEO / social:** every page ships with correct metadata, Open Graph / Twitter cards, sitemap and RSS where applicable.
 
-## Tech Stack
+## Tech Stack (ADRs 0001–0007)
 
-**Not yet decided.** The stack (framework, styling, content pipeline for the blog, animations, analytics, contact-form delivery) is chosen through `docs/tech_discovery/` and recorded in ADRs after the design direction is locked. The predecessor (portfolio-dd) was Next.js + Tailwind + shadcn/ui — a reference point, not a constraint. Deployment is Vercel (decided — see `docs/adr/` once recorded).
+- **Framework:** Next.js 16 App Router (TypeScript), statically prerendered; API routes only for contact + chat. Vercel hosting.
+- **Styling/motion:** Tailwind v4 (`@theme inline` over CSS custom properties) + GSAP (ScrollTrigger/SplitText); accent theming via `data-accent` on `<html>`; reduced-motion gated globally.
+- **Content:** Content Collections (zod-validated MDX in `content/posts/`), Shiki highlighting, `feed` RSS, `next/og` cards. TL;DRs pre-built by `npm run tldr` into a committed cache — builds make zero AI calls.
+- **AI:** Vercel AI SDK v7, provider-agnostic (any one of OpenRouter/OpenAI/Anthropic keys; auto-detected, `AI_PROVIDER` override). Grounded AMA chat streams from `/api/chat`.
+- **Contact:** Resend + honeypot/fill-time spam gates.
+- **Tests:** Vitest 4 + Testing Library (`npm test`); build with `npm run build`. Both must pass before commit.
+- **Data-as-content:** identity in `lib/site.ts`, projects/experience in `lib/data/` — these feed pages, SEO, and the AI grounding pack. Never hardcode identity facts in components.
 
 ## Folder-level AGENTS.md files
 

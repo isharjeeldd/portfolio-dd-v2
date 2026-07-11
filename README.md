@@ -4,7 +4,7 @@ Personal developer portfolio of **Sharjeel Afzaal** — successor to [portfolio-
 
 ## Status
 
-🚧 **Greenfield — design discovery in progress.** The look & feel is being defined (inspiration research → product discovery → FSD) before any application code is written.
+🚀 **Release 1.0.0 on `main`** — 12 features, 7 ADRs, 109 tests. Dark editorial minimalism with a kinetic-typography hero, visitor-selectable accent, MDX blog with AI TL;DRs, a grounded AMA chat (bring any AI provider key), playground experiments, and Resend-backed contact. See [`docs/releases/1.0.0.md`](docs/releases/1.0.0.md) and the [build-log post](content/posts/why-this-portfolio-has-a-docs-folder.mdx).
 
 ## How this repo works
 
