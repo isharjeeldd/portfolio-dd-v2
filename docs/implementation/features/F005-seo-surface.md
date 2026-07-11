@@ -1,7 +1,7 @@
 ---
 feature: SEO Surface — Metadata, JSON-LD, Sitemap, OG Cards
 type: feature
-status: ready
+status: done
 release: "1.0.0"
 priority: P0
 component: seo
