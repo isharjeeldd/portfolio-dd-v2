@@ -15,6 +15,7 @@
 |---|---|---|
 | 1.0 | 2026-07-11 | Initial FSD derived from locked `portfolio_product_discovery_v1.md` |
 | 1.0 | 2026-07-11 | **Locked** by @isharjeeldd — build gate open; FR IDs frozen |
+| 1.1 | 2026-07-11 | **Amendment (owner sign-off, brand board / ADR-0007):** FR-THEME-2 default accent changed terminal lime → **crimson**; switcher set unchanged |
 
 **Requirement language.** `Must` = required for 1.0.0; cutting one needs sign-off recorded here. `Should` = strongly recommended, cut only with reason. `May` = optional. Deferred items are marked `Won't (v1)` in §8.
 
@@ -149,7 +150,7 @@ Hybrid structure (D1): landing (`/`) with sections Hero → Selected Work → Pl
 | ID | Requirement | Priority |
 |---|---|---|
 | FR-THEME-1 | The site ships dark-only: near-black canvas, off-white type, monochrome base. | Must |
-| FR-THEME-2 | Visitors can switch the accent color from a curated set of 4 (terminal lime default, electric blue, signal amber, crimson); the switch applies live without reload. | Must |
+| FR-THEME-2 | Visitors can switch the accent color from a curated set of 4 (**crimson default** — amended v1.1 per ADR-0007; terminal lime, electric blue, signal amber); the switch applies live without reload. | Must |
 | FR-THEME-3 | The accent choice persists across visits on the same device. | Must |
 | FR-THEME-4 | Every accent-consuming surface (links, focus rings, selection, cursor details, mark accents, social cards where feasible) re-themes coherently; accent occupies < ~5% of any viewport. | Must |
 | FR-THEME-5 | All four accents meet contrast requirements in every role they're used for (§6 Accessibility). | Must |
