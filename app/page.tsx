@@ -1,6 +1,7 @@
 import { BlogTeaser } from "@/components/blog/blog-teaser";
 import { ContactForm } from "@/components/contact/contact-form";
 import { Hero } from "@/components/hero/hero";
+import { WorkSection } from "@/components/work/work-section";
 import { site } from "@/lib/site";
 
 /**
@@ -14,10 +15,7 @@ export default function Home() {
     <div className="mx-auto max-w-5xl px-6">
       <Hero />
 
-      <section id="work" className="scroll-mt-20 border-t border-line py-24">
-        <h2 className="font-display text-3xl font-bold tracking-tight">Selected work</h2>
-        <p className="mt-4 font-mono text-sm text-faint">{"// F007 — in the loop"}</p>
-      </section>
+      <WorkSection />
 
       <section id="playground" className="scroll-mt-20 border-t border-line py-24">
         <h2 className="font-display text-3xl font-bold tracking-tight">Playground</h2>
