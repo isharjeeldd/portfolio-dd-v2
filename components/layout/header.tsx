@@ -19,10 +19,11 @@ export function Header() {
           <sup className="text-[0.55em] text-accent">®</sup>
         </Link>
 
-        <nav aria-label="Primary">
-          <ul className="flex items-center gap-5 font-mono text-xs uppercase tracking-widest text-muted">
+        {/* Horizontal scroll on narrow viewports — the page never scrolls sideways (FR-SITE-2). */}
+        <nav aria-label="Primary" className="min-w-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <ul className="flex items-center gap-5 whitespace-nowrap font-mono text-xs uppercase tracking-widest text-muted">
             {sections.map((section) => (
-              <li key={section.id} className="hidden sm:block">
+              <li key={section.id}>
                 <a href={`/#${section.id}`} className="transition-colors hover:text-ink">
                   {section.label}
                 </a>
