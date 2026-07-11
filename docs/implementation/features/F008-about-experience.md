@@ -1,7 +1,7 @@
 ---
 feature: About / Experience Section
 type: feature
-status: ready
+status: done
 release: "1.0.0"
 priority: P0
 component: about
