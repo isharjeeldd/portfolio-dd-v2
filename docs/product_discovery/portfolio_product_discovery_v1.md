@@ -20,6 +20,8 @@
 
 ### 1.0.0 — July 2026
 - Changed: primary display name is **Muhammad Sharjeel** (per CNIC); brand mark becomes **MS®**. "Sharjeel Afzaal" is retained as alternate name for SEO and domain continuity (`sharjeelafzaal.com`).
+- Added: freelance availability surfaces the **Upwork profile** alongside the contact channels (D13, F-G).
+- Clarified: contact-form delivery reuses the existing verified Resend setup (`contact@sharjeelafzaal.com` → `sharjeelafzaal123@gmail.com`); provider details live in tech discovery / operator docs, not here.
 - Added: initial product discovery for the new portfolio, derived from design-inspiration research (awwwards) and the grill sessions of 2026-07-11.
 
 ## Vision & Positioning
@@ -65,7 +67,7 @@ What visitors should feel: *this person engineers experiences with restraint and
 | **D10** | **Selected Work draws from four sources:** professional work as outcome-focused case studies (anonymized as needed), refreshed best projects from portfolio-dd, side projects/OSS, and a meta case study of this portfolio's own build. |
 | **D11** | **Playground section** exists on the landing page: small interactive experiments demonstrating engineering craft. |
 | **D12** | **Voice: confident minimal** across all copy. |
-| **D13** | **Conversion surface:** primary CTA "get in touch" (form + direct email/socials); understated "available for select projects" signal; **no rates published**; CV available. |
+| **D13** | **Conversion surface:** primary CTA "get in touch" (form + direct email/socials); understated "available for select projects" signal with a **link to the Upwork freelance profile** for visitors who prefer contracting through a platform; **no rates published on the site**; CV available. |
 
 ## Feature Scope
 
@@ -164,7 +166,7 @@ A chat surface grounded in Sharjeel's CV, project write-ups, and blog posts (D9a
 
 ### F-G. Contact
 
-Landing-page section + persistent nav affordance: form (name/email/message + optional intent: role · freelance · other), direct email, socials (GitHub, LinkedIn), availability signal (D13).
+Landing-page section + persistent nav affordance: form (name/email/message + optional intent: role · freelance · other), direct email, socials (GitHub, LinkedIn, [Upwork](https://www.upwork.com/freelancers/~010ece6ddbb7345ea6)), availability signal (D13). Freelance-intent visitors see the Upwork profile as an alternative channel.
 
 - Must: form delivers reliably to Sharjeel; success and failure states are explicit; spam-protected without visible CAPTCHA friction.
 - Should: intent field routes/labels the message.
