@@ -1,3 +1,4 @@
+import { AboutSection } from "@/components/about/about-section";
 import { BlogTeaser } from "@/components/blog/blog-teaser";
 import { ContactForm } from "@/components/contact/contact-form";
 import { Hero } from "@/components/hero/hero";
@@ -22,10 +23,7 @@ export default function Home() {
         <p className="mt-4 font-mono text-sm text-faint">{"// F009 — in the loop"}</p>
       </section>
 
-      <section id="about" className="scroll-mt-20 border-t border-line py-24">
-        <h2 className="font-display text-3xl font-bold tracking-tight">About</h2>
-        <p className="mt-4 font-mono text-sm text-faint">{"// F008 — in the loop"}</p>
-      </section>
+      <AboutSection />
 
       <BlogTeaser />
 
