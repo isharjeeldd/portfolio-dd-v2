@@ -1,11 +1,11 @@
 {
   "why-this-portfolio-has-a-docs-folder": {
-    "hash": "c0312bdbb98f77c0bbe35894a4a779b764ae6252b7e0c5e8cd3bcd283ea55747",
+    "hash": "e5c04ac2eefd55b5edc92df8c8b6fcb81f45d500cbf64c733d4fc989ec385ef0",
     "takeaways": [
-      "Building a portfolio with full product-discovery docs, a functional spec, and ADRs makes the process itself a work sample of senior engineering.",
-      "A forward-only pipeline (discovery → spec → ADRs → TDD → code → release) ensures every implementation traces back to a locked decision.",
-      "Writing requirements and tests before code eliminates implementation thrash and makes edge cases explicit rather than accidental.",
-      "Documented decisions compound over time: future versions start from a versioned baseline instead of reverse-engineering intent from code."
+      "The portfolio was built docs-first: product discovery, a 47-requirement functional spec, and ADRs were all locked before any component was written.",
+      "Every feature traces to a numbered requirement, was implemented with tests written before code, and was validated against production metrics like Lighthouse ≥ 90 and WCAG 2.2 AA.",
+      "The process is intentional proof-of-work — showing scope decisions, tradeoffs, and structured thinking is more signal than shipping another todo app.",
+      "The architecture is designed to compound: v2 starts from a locked v1 baseline rather than re-deriving decisions from scratch."
     ]
   }
 }

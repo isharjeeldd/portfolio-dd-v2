@@ -61,6 +61,24 @@ Three reasons, honestly held:
 3. **It compounds.** v2 of this site starts from a locked v1 baseline, not
    from archaeology.
 
+## The 1.0.0 build, by the numbers
+
+The loop that built this site ran the same protocol thirteen times:
+validate → plan with test cases → branch → tests first → implement →
+verify → merge. The receipts:
+
+- **1 locked product discovery** (13 decisions) and **1 locked FSD**
+  (47 requirements, 23 edge cases, measurable budgets)
+- **7 ADRs** — framework, styling/motion, content pipeline, AI
+  abstraction, contact delivery, analytics, brand identity
+- **12 implementation features**, each `draft → ready → in-progress →
+  done` with tests written before code
+- **109 tests** at launch, plus lint and a static production build
+  gating every merge
+- **1 provider-agnostic AI layer** — the chat answering questions about
+  me and the TL;DR block above both run on whichever API key exists,
+  and the site survives having none
+
 The full system — discovery docs, FSD, ADRs, the build loop — is public in
 the [repository](https://github.com/isharjeeldd/portfolio-dd-v2). Read it,
 steal it, tell me where it's wrong.
