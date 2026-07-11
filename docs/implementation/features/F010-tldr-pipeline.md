@@ -1,7 +1,7 @@
 ---
 feature: AI TL;DR Pipeline — Build-time Generation with Committed Cache
 type: feature
-status: ready
+status: done
 release: "1.0.0"
 priority: P1
 component: blog
