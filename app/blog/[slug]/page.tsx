@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXContent } from "@content-collections/mdx/react";
+import { TldrBlock } from "@/components/blog/tldr-block";
 import { formatDate } from "@/lib/format";
 import { adjacentPosts, getPost, sortedPosts } from "@/lib/posts";
 
@@ -53,6 +54,8 @@ export default async function PostPage({ params }: { params: Promise<Params> }) 
         </h1>
         <p className="mt-4 text-lg text-muted">{post.description}</p>
       </header>
+
+      <TldrBlock takeaways={post.tldr} />
 
       <div className="post-prose mt-12">
         <MDXContent code={post.mdx} />
