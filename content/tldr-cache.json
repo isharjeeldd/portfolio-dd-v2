@@ -1,0 +1,11 @@
+{
+  "why-this-portfolio-has-a-docs-folder": {
+    "hash": "e5c04ac2eefd55b5edc92df8c8b6fcb81f45d500cbf64c733d4fc989ec385ef0",
+    "takeaways": [
+      "The portfolio was built docs-first: product discovery, a 47-requirement functional spec, and ADRs were all locked before any component was written.",
+      "Every feature traces to a numbered requirement, was implemented with tests written before code, and was validated against production metrics like Lighthouse ≥ 90 and WCAG 2.2 AA.",
+      "The process is intentional proof-of-work — showing scope decisions, tradeoffs, and structured thinking is more signal than shipping another todo app.",
+      "The architecture is designed to compound: v2 starts from a locked v1 baseline rather than re-deriving decisions from scratch."
+    ]
+  }
+}
