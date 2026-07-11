@@ -12,22 +12,22 @@ export default function Home() {
     <div className="mx-auto max-w-5xl px-6">
       <Hero />
 
-      <section id="work" className="border-t border-line py-24">
+      <section id="work" className="scroll-mt-20 border-t border-line py-24">
         <h2 className="font-display text-3xl font-bold tracking-tight">Selected work</h2>
         <p className="mt-4 font-mono text-sm text-faint">{"// F007 — in the loop"}</p>
       </section>
 
-      <section id="playground" className="border-t border-line py-24">
+      <section id="playground" className="scroll-mt-20 border-t border-line py-24">
         <h2 className="font-display text-3xl font-bold tracking-tight">Playground</h2>
         <p className="mt-4 font-mono text-sm text-faint">{"// F009 — in the loop"}</p>
       </section>
 
-      <section id="about" className="border-t border-line py-24">
+      <section id="about" className="scroll-mt-20 border-t border-line py-24">
         <h2 className="font-display text-3xl font-bold tracking-tight">About</h2>
         <p className="mt-4 font-mono text-sm text-faint">{"// F008 — in the loop"}</p>
       </section>
 
-      <section id="contact" className="border-t border-line py-24">
+      <section id="contact" className="scroll-mt-20 border-t border-line py-24">
         <h2 className="font-display text-3xl font-bold tracking-tight">Contact</h2>
         <p className="mt-4 max-w-xl text-muted">
           Until the form ships (F006):{" "}

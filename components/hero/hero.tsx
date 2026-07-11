@@ -55,7 +55,7 @@ export function Hero() {
       ref={scope}
       data-testid="hero"
       data-motion={reduced ? "reduced" : "full"}
-      className="relative flex min-h-[80vh] flex-col justify-center py-24"
+      className="relative flex min-h-[80vh] scroll-mt-20 flex-col justify-center py-24"
     >
       <p className="hero-rise mb-6 font-mono text-xs uppercase tracking-[0.14em] text-muted">
         {site.availability} <span className="text-accent">●</span>
