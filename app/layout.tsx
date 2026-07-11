@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { ChatLauncher } from "@/components/chat/chat-launcher";
 import { AccentScript } from "@/components/theme/accent-script";
 import { DEFAULT_ACCENT } from "@/lib/accent";
 import { personJsonLd } from "@/lib/seo";
@@ -72,6 +73,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ChatLauncher />
       </body>
     </html>
   );
