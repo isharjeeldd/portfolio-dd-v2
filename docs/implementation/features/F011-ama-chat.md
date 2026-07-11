@@ -1,7 +1,7 @@
 ---
 feature: AMA Chat — Grounded, Provider-Agnostic, Streaming
 type: feature
-status: ready
+status: done
 release: "1.0.0"
 priority: P1
 component: cross-cutting
